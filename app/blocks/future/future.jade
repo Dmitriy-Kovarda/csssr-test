@@ -1,0 +1,30 @@
+include ../heading/heading
+
+mixin future()
+	+b.future&attributes(attributes)
+		+heading
+			+e.title
+				| Какие у вас планы на будущее?
+			+e.description
+				| Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+		+e.radio
+			+e('label').label
+				input(type='radio' name='radio' checked hidden).radio
+				+e('span').radio-custom
+				+e('span').label-custom
+					| Верстать
+			+e('label').label
+				input(type='radio' name='radio' hidden).radio
+				+e('span').radio-custom
+				+e('span').label-custom
+					| Прокачиваться в JS	
+			+e('label').label
+				input(type='radio' name='radio' hidden).radio
+				+e('span').radio-custom
+				+e('span').label-custom
+					| Менеджерство
+			+e('label').label
+				input(type='radio' name='radio' hidden).radio
+				+e('span').radio-custom
+				+e('span').label-custom
+					| Другое

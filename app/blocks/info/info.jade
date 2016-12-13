@@ -1,0 +1,22 @@
+mixin info()
+	+b.info&attributes(attributes)
+		+e.input_box
+			+e.label Полное ФИО
+			//- +input.input-info(type="text", name="name", value="Коварда Дмитрий Сергеевич")
+			+e('input').text(type="text", name="name", value="Коварда Дмитрий Сергеевич")
+		+e.input_box
+			+e.label Год рождения
+			//- +input.input-info(type="text", name="name", value="1992")
+			+e('input').text(type="text", name="name", value="1992")
+		+e.input_box
+			+e.label Место жительства
+			//- +input.input-info(type="text", name="name", value="г. Гомель, Республика Беларусь")
+			+e('input').text(type="text", name="name", value="г. Гомель, Республика Беларусь")
+		+e.input_box
+			+e.label Скайп
+			//- +input.input-info(type="text", name="name", value="etojeteon")
+			+e('input').text(type="text", name="name", value="etojeteon")
+		+e.input_box
+			+e.label Почта
+			//- +input.input-info(type="text", name="name", value="dimateon@gmail.com")
+			+e('input').text(type='text', name="name", value="dimateon@gmail.com")

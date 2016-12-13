@@ -1,0 +1,47 @@
+mixin list()
+	+b.skills-lists&attributes(attributes)
+		+e('ul').list
+			each item in getData('skills0')
+				if item.checked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" checked hidden).checkbox
+							+e('span').checkbox-custom		
+							+e('span').label-custom !{ item.checked }
+				else if item.unchecked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" hidden).checkbox
+							+e('span').checkbox-custom
+							+e('span').label-custom !{ item.unchecked }
+
+		+e('ul').list
+			each item in getData('skills1')
+				if item.checked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" checked hidden).checkbox
+							+e('span').checkbox-custom		
+							+e('span').label-custom !{ item.checked }
+				else if item.unchecked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" hidden).checkbox
+							+e('span').checkbox-custom
+							+e('span').label-custom !{ item.unchecked }
+
+		+e('ul').list
+			each item in getData('skills2')
+				if item.checked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" checked hidden).checkbox
+							+e('span').checkbox-custom		
+							+e('span').label-custom !{ item.checked }
+				else if item.unchecked
+					+e('li').item
+						+e('label').label
+							input(type="checkbox" hidden).checkbox
+							+e('span').checkbox-custom
+							+e('span').label-custom !{ item.unchecked }
+

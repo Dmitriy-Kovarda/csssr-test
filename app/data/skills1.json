@@ -1,0 +1,21 @@
+[{
+	"checked": "Gulp/GRUNT"
+},
+{
+	"unchecked": "Webpack"
+},
+{
+	"unchecked": "Дружу с WebGL"
+},
+{
+	"checked": "jQuery"
+},
+{
+	"unchecked": "Знаю/изучаю Angular"
+},
+{
+	"unchecked": "Знаю/изучаю React"
+},
+{
+	"unchecked": "Знаю/изучаю Node.js"
+}]

@@ -1,0 +1,33 @@
+pt-sans = 'PT Sans', sans-serif	
+cour = 'cour', sans-serif
+
+font-face($family, $filename)
+	@font-face
+		font-family $family
+		src url('../fonts/eot/' + $filename + '.eot');
+		src url('../fonts/eot/' + $filename + '.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/woff2/' + $filename + '.woff2') format('woff2'),
+			url('../fonts/woff/' + $filename + '.woff') format('woff'),
+			url('../fonts/ttf/' + $filename + '.ttf') format('truetype'),
+			url('../fonts/svg/' + $filename + '.svg') format('svg')
+		{block}
+		
++font-face('PT Sans', 'pt-sans')
+	font-weight 400
+	font-style normal
+
++font-face('PT Sans', 'pt-sans-italic')
+	font-weight 400
+	font-style italic
+
++font-face('PT Sans', 'pt-sans-bold')
+	font-weight 600
+	font-style normal
+
++font-face('PT Sans', 'pt-sans-bolditalic')
+	font-weight 600
+	font-style italic
+	
++font-face('cour', 'cour')
+	font-weight 400
+	font-style normal

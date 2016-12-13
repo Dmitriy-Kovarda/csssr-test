@@ -1,0 +1,54 @@
+.skills-lists
+	clearfix()
+
+	&__label
+		clearfix()
+
+	&__list
+		float left
+		width 33.3%
+		
+		&:nth-child(3)
+			position relative
+			left 14px
+		
+	&__item
+		margin-bottom 0.7em	
+		display inline-block
+		width 100%
+		
+	&__label-custom	
+		font-size 21px
+		font-weight 600
+		font-style normal
+		float right
+		width 90%
+		text-align left
+				
+	&__checkbox-custom
+		sprite $checkbox
+		display inline-block
+		
+	.checkbox:checked + &__checkbox-custom:before
+		content ""
+		display inline-block
+		sprite $checked
+		
+	.link
+		color #1f5f97
+		text-decoration none
+		position relative	
+			
+	.link:after
+		content ""
+		width 100%
+		height 1px
+		background-color #1f5f97
+		position absolute
+		bottom 3px
+		left 0
+		display inline-block
+		
+			
+		
+

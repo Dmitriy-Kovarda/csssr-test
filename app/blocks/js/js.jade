@@ -1,0 +1,20 @@
+include ../heading/heading
+
+mixin js()
+	+b.js&attributes(attributes)
+		+heading
+			+e.title
+				| Уровень владения JavaScript
+		+e.slider.js-slider
+			+e.container.js-sliderbox
+				+e.button.js-slider-button
+			+e.wrapper
+			+e.wrapper
+			+e.block-1
+				| Не владею
+			+e.block-2
+				| Использую готовые решения
+			+e.block-3
+				| Использую готовые решения <br>и умею их переделывать
+			+e.block-4
+				| Пишу сложный JS с нуля

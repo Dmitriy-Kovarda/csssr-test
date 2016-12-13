@@ -1,0 +1,16 @@
+include ../info/info
+include ../skills/skills
+include ../js/js
+include ../about/about
+include ../future/future
+include ../date/date
+
+mixin container()
+	+b.container&attributes(attributes)
+		+info
+		+skills
+		+js
+		+about
+		+future
+		+date
+

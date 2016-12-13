@@ -1,0 +1,82 @@
+.js
+	display block
+	position relative
+	margin-top 50px
+	
+	&__slider
+		border-top 3px solid #2f1b15
+		margin-top 40px
+		height 100px
+
+	&__container
+		position absolute
+		top 40px
+		width 770px
+		height 2px
+	
+	&__button
+		position absolute
+		cursor pointer
+		sprite $triangle
+		margin-left -10px
+		left 255px
+		top 6px
+
+	&__slider:before,
+	&__slider:after
+		content ''
+		position absolute
+		top 66px
+		width 2px
+		height 25px
+		background-color #2f1b15
+	
+	&__slider:before
+		left 0
+			
+	&__slider:after
+		right 0
+
+	&__wrapper
+		position absolute
+		top 66px
+		left 150px
+		width 2px
+		height 10px
+		background-color #2f1b15
+		
+	&__wrapper:nth-child(0)
+		left 150px
+
+	&__wrapper:nth-child(2)
+		left 374px
+
+	&__block-1,
+	&__block-2,
+	&__block-3,
+	&__block-4
+		font-size 13px
+		position absolute
+		color #2f1b15
+		font-weight 600
+		
+		&:hover
+			cursor pointer
+		
+	&__block-1
+		left 0
+		top 100px
+		
+	&__block-2
+		left 147px
+		top 97px
+			
+	&__block-3
+		left 374px
+		top 95px
+		line-height 19px
+			
+	&__block-4
+		right 0
+		top 105px
+
