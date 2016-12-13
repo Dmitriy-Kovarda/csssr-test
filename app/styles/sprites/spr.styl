@@ -1,0 +1,232 @@
+/*
+Stylus variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon_home_width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon_home = x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet = width height image $spritesheet_sprites;
+*/
+$bg_name = 'bg';
+$bg_x = 390px;
+$bg_y = 46px;
+$bg_offset_x = -390px;
+$bg_offset_y = -46px;
+$bg_width = 18px;
+$bg_height = 18px;
+$bg_total_width = 408px;
+$bg_total_height = 236px;
+$bg_image = '../images/sprites/spr.png';
+$bg = 390px 46px -390px -46px 18px 18px 408px 236px '../images/sprites/spr.png' 'bg';
+$checkbox_name = 'checkbox';
+$checkbox_x = 334px;
+$checkbox_y = 46px;
+$checkbox_offset_x = -334px;
+$checkbox_offset_y = -46px;
+$checkbox_width = 20px;
+$checkbox_height = 20px;
+$checkbox_total_width = 408px;
+$checkbox_total_height = 236px;
+$checkbox_image = '../images/sprites/spr.png';
+$checkbox = 334px 46px -334px -46px 20px 20px 408px 236px '../images/sprites/spr.png' 'checkbox';
+$checked_name = 'checked';
+$checked_x = 362px;
+$checked_y = 46px;
+$checked_offset_x = -362px;
+$checked_offset_y = -46px;
+$checked_width = 20px;
+$checked_height = 20px;
+$checked_total_width = 408px;
+$checked_total_height = 236px;
+$checked_image = '../images/sprites/spr.png';
+$checked = 362px 46px -362px -46px 20px 20px 408px 236px '../images/sprites/spr.png' 'checked';
+$logo_name = 'logo';
+$logo_x = 262px;
+$logo_y = 0px;
+$logo_offset_x = -262px;
+$logo_offset_y = 0px;
+$logo_width = 146px;
+$logo_height = 38px;
+$logo_total_width = 408px;
+$logo_total_height = 236px;
+$logo_image = '../images/sprites/spr.png';
+$logo = 262px 0px -262px 0px 146px 38px 408px 236px '../images/sprites/spr.png' 'logo';
+$print_name = 'print';
+$print_x = 0px;
+$print_y = 0px;
+$print_offset_x = 0px;
+$print_offset_y = 0px;
+$print_width = 254px;
+$print_height = 110px;
+$print_total_width = 408px;
+$print_total_height = 236px;
+$print_image = '../images/sprites/spr.png';
+$print = 0px 0px 0px 0px 254px 110px 408px 236px '../images/sprites/spr.png' 'print';
+$radio_name = 'radio';
+$radio_x = 262px;
+$radio_y = 46px;
+$radio_offset_x = -262px;
+$radio_offset_y = -46px;
+$radio_width = 28px;
+$radio_height = 28px;
+$radio_total_width = 408px;
+$radio_total_height = 236px;
+$radio_image = '../images/sprites/spr.png';
+$radio = 262px 46px -262px -46px 28px 28px 408px 236px '../images/sprites/spr.png' 'radio';
+$radio_checked_name = 'radio_checked';
+$radio_checked_x = 298px;
+$radio_checked_y = 46px;
+$radio_checked_offset_x = -298px;
+$radio_checked_offset_y = -46px;
+$radio_checked_width = 28px;
+$radio_checked_height = 28px;
+$radio_checked_total_width = 408px;
+$radio_checked_total_height = 236px;
+$radio_checked_image = '../images/sprites/spr.png';
+$radio_checked = 298px 46px -298px -46px 28px 28px 408px 236px '../images/sprites/spr.png' 'radio_checked';
+$title_name = 'title';
+$title_x = 0px;
+$title_y = 118px;
+$title_offset_x = 0px;
+$title_offset_y = -118px;
+$title_width = 220px;
+$title_height = 118px;
+$title_total_width = 408px;
+$title_total_height = 236px;
+$title_image = '../images/sprites/spr.png';
+$title = 0px 118px 0px -118px 220px 118px 408px 236px '../images/sprites/spr.png' 'title';
+$triangle_name = 'triangle';
+$triangle_x = 262px;
+$triangle_y = 82px;
+$triangle_offset_x = -262px;
+$triangle_offset_y = -82px;
+$triangle_width = 20px;
+$triangle_height = 16px;
+$triangle_total_width = 408px;
+$triangle_total_height = 236px;
+$triangle_image = '../images/sprites/spr.png';
+$triangle = 262px 82px -262px -82px 20px 16px 408px 236px '../images/sprites/spr.png' 'triangle';
+$sp_spr_width = 408px;
+$sp_spr_height = 236px;
+$sp_spr_image = '../images/sprites/spr.png';
+$sp_spr_sprites = $bg $checkbox $checked $logo $print $radio $radio_checked $title $triangle;
+$sp_spr = 408px 236px '../images/sprites/spr.png' $sp_spr_sprites;
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+// The list formatted variables are intended for mixins like `retinaSprite` and `retinaSprites`.
+
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  spriteWidth($icon_home)
+}
+
+.icon-email {
+  sprite($icon_email)
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+spriteWidth($sprite) {
+  width: $sprite[4];
+}
+
+spriteHeight($sprite) {
+  height: $sprite[5];
+}
+
+spritePosition($sprite) {
+  background-position: $sprite[2] $sprite[3];
+}
+
+spriteImage($sprite) {
+  background-image: url($sprite[8]);
+}
+
+sprite($sprite) {
+  spriteImage($sprite)
+  spritePosition($sprite)
+  spriteWidth($sprite)
+  spriteHeight($sprite)
+}
+
+
+// The `retinaSprite` mixin sets up rules and a media query for a sprite/retina sprite.
+// It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon_home_group = 'icon-home' $icon_home $icon_home_2x;
+//
+// .icon-home {
+//     retinaSprite($icon_home_group)
+// }
+
+
+spriteBackgroundSize($sprite) {
+	background-size $sprite[6] $sprite[7]
+}
+
+retinaSprite($retina_group) {
+	$normal_sprite = $retina_group[1]
+	$retina_sprite = $retina_group[2]
+	sprite($normal_sprite)
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+				 (min-resolution: 192dpi) {
+		spriteImage($retina_sprite)
+		spriteBackgroundSize($normal_sprite)
+	}
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of Stylus
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+sprites($spritesheet_sprites);
+*/
+sprites($sprites) {
+  for $sprite in $sprites {
+    $sprite_name = $sprite[9];
+    .{$sprite_name} {
+      sprite($sprite);
+    }
+  }
+}
+
+// The `retinaSprites` mixin generates a CSS rule and media query for retina groups
+// This yields the same output as CSS retina template but can be overridden in Stylus
+//
+// retinaSprites($retina_groups)
+
+retinaSprites($retina_groups) {
+	for $retina_group in $retina_groups {
+		$sprite_name = $retina_group[0];
+		.{$sprite_name} {
+			retinaSprite $retina_group
+		}
+	}
+}
